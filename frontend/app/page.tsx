@@ -11,7 +11,7 @@ export default function Home() {
   const categories = ["All", "Men", "Women", "Kids", "Slippers"];
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/products/all")
+    fetch("https://solestream-backend.onrender.com/api/products/all")
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch((err) => console.log("Error:", err));
